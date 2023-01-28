@@ -50,6 +50,7 @@ export function Homa() {
             className="input-test"
             value={homa}
             onChange={(e) => setHoma(e.target.value)}
+            disabled
           />
         </fieldset>
       </div>

@@ -68,6 +68,7 @@ export function Cholesterol() {
             className="input-test"
             value={ldl}
             onChange={(e) => setLdl(e.target.value)}
+            disabled
           />
         </fieldset>
         <fieldset className="w-64 border border-white flex justify-center rounded-lg">
@@ -79,6 +80,7 @@ export function Cholesterol() {
             className="input-test"
             value={vldl}
             onChange={(e) => setVldl(e.target.value)}
+            disabled
           />
         </fieldset>
       </div>
