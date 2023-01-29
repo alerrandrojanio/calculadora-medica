@@ -21,68 +21,70 @@ export function Cholesterol() {
   }, [colesterol, hdl, triglicerideos])
 
   return (
-    <div className="div-root">
-      <div className="mt-2 flex justify-center items-center flex-col gap-2">
-        <fieldset className="w-64 border border-white flex justify-center rounded-lg">
-          <legend className="p-1 ml-3 text-md font-semibold">
-            Colesterol Total (mg/dL)
-          </legend>
-          <input
-            type="number"
-            className="input-test"
-            value={colesterol}
-            onChange={(e) => setColesterol(e.target.value)}
-          />
-        </fieldset>
-        <fieldset className="w-64 border border-white flex justify-center rounded-lg">
-          <legend className="p-1 ml-3 text-md font-semibold">
-            HDL (mg/dL)
-          </legend>
-          <input
-            type="number"
-            className="input-test"
-            value={hdl}
-            onChange={(e) => setHdl(e.target.value)}
-          />
-        </fieldset>
-        <fieldset className="w-64 border border-white flex justify-center rounded-lg">
-          <legend className="p-1 ml-3 text-md font-semibold">
-            Triglicerídeos (mg/dL)
-          </legend>
-          <input
-            type="number"
-            className="input-test"
-            value={triglicerideos}
-            onChange={(e) => setTriglicerideos(e.target.value)}
-          />
-        </fieldset>
-      </div>
+    <div className="flex w-full m-auto p-4 justify-center items-center flex-col flex-wrap">
+      <div className="flex max-w-[680px] w-full bg-lac-blue-dark shadow-lg rounded-lg justify-center items-center flex-col flex-wrap mt-6">
+        <div className="mt-6 flex gap-3 flex-col">
+          <fieldset className="w-64 border border-white flex justify-center rounded-lg">
+            <legend className="p-1 ml-3 text-md font-semibold">
+              Colesterol Total (mg/dL)
+            </legend>
+            <input
+              type="number"
+              className="input-test"
+              value={colesterol}
+              onChange={(e) => setColesterol(e.target.value)}
+            />
+          </fieldset>
+          <fieldset className="w-64 border border-white flex justify-center rounded-lg">
+            <legend className="p-1 ml-3 text-md font-semibold">
+              HDL (mg/dL)
+            </legend>
+            <input
+              type="number"
+              className="input-test"
+              value={hdl}
+              onChange={(e) => setHdl(e.target.value)}
+            />
+          </fieldset>
+          <fieldset className="w-64 border border-white flex justify-center rounded-lg">
+            <legend className="p-1 ml-3 text-md font-semibold">
+              Triglicerídeos (mg/dL)
+            </legend>
+            <input
+              type="number"
+              className="input-test"
+              value={triglicerideos}
+              onChange={(e) => setTriglicerideos(e.target.value)}
+            />
+          </fieldset>
+        </div>
 
-      <div className="my-4 mx-2 flex justify-center items-center gap-2 flex-wrap">
-        <fieldset className="w-64 border border-white flex justify-center rounded-lg">
-          <legend className="p-1 ml-3 text-md font-semibold">
-            LDL (mg/dL)
-          </legend>
-          <input
-            type="number"
-            className="input-test"
-            value={ldl}
-            onChange={(e) => setLdl(e.target.value)}
-            disabled
-          />
-        </fieldset>
-        <fieldset className="w-64 border border-white flex justify-center rounded-lg">
-          <legend className="p-1 ml-3 text-md font-semibold">
-            VLDL (mg/dL)
-          </legend>
-          <input
-            type="number"
-            className="input-test"
-            value={vldl}
-            onChange={(e) => setVldl(e.target.value)}
-            disabled
-          />
-        </fieldset>
+        <div className="my-6 flex justify-center items-center gap-5 flex-wrap">
+          <fieldset className="w-64 border border-white flex justify-center rounded-lg">
+            <legend className="p-1 ml-3 text-md font-semibold">
+              LDL (mg/dL)
+            </legend>
+            <input
+              type="number"
+              className="input-test"
+              value={ldl}
+              onChange={(e) => setLdl(e.target.value)}
+              disabled
+            />
+          </fieldset>
+          <fieldset className="w-64 border border-white flex justify-center rounded-lg">
+            <legend className="p-1 ml-3 text-md font-semibold">
+              VLDL (mg/dL)
+            </legend>
+            <input
+              type="number"
+              className="input-test"
+              value={vldl}
+              onChange={(e) => setVldl(e.target.value)}
+              disabled
+            />
+          </fieldset>
+        </div>
       </div>
     </div>
   )

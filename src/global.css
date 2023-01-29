@@ -4,7 +4,7 @@
 
 @layer components {
   .div-root {
-    @apply bg-lac-blue-dark rounded-lg mx-10 my-8 p-4 flex justify-center items-center flex-col gap-6;
+    @apply w-full mx-10 my-8 p-4 flex justify-center items-center flex-col gap-6;
   }
 
   .input-test {

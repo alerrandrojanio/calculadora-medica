@@ -1,7 +1,7 @@
 import { Header } from "../components/Header"
 import { Homa } from "../components/Homa"
 
-export function HomaIndex() {
+export default function HomaIndex() {
   return (
     <>
       <Header />
