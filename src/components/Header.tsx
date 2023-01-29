@@ -11,14 +11,14 @@ export function Header() {
       </div>
       <div className="mt-8 font-semibold text-center text-xl flex justify-center gap-4 text-lac-blue-dark">
         <Link
-          to={"/"}
+          to={"/calculadora-medica/"}
           className="text-xl font-semibold hover:text-lac-blue-medium"
         >
           Colesterol
         </Link>{" "}
         |
         <Link
-          to={"/homa"}
+          to={"/calculadora-medica/homa"}
           className="text-xl font-semibold hover:text-lac-blue-medium"
         >
           Índice de Homa
