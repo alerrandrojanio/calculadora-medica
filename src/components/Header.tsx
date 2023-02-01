@@ -17,7 +17,7 @@ export function Header() {
           >
             Colesterol LDL/VLDL
           </Link>{" "}
-          <span className="text-white">|</span>
+          <span className="text-white max-sm:hidden">|</span>
           <Link
             to={"/calculadora-medica/homa"}
             className="text-lg font-semibold text-white hover:text-lac-blue-light"
