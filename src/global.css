@@ -10,4 +10,14 @@
   .input-test {
     @apply border-none outline-none p-2 w-60 bg-transparent text-center text-2xl font-semibold;
   }
+
+  @layer base {
+    input[type="number"]::-webkit-outer-spin-button,
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"] {
+      -webkit-appearance: none;
+      margin: 0;
+      -moz-appearance: textfield !important;
+    }
+  }
 }
